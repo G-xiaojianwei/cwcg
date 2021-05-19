@@ -1,0 +1,5 @@
+<template name="1efbd361">
+  <view class="_div data-v-06637e50 return" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <image src="/static/img/return.png" alt class="_img data-v-06637e50"></image>
+  </view>
+</template>

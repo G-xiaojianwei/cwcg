@@ -1,0 +1,19 @@
+<template name="a6d1d246">
+  <view class="_div data-v-d8027c68">
+    <view class="_div data-v-d8027c68 list-item" wx:key="index" key="{{index}}" wx:for="{{order}}" wx:for-index="index" wx:for-item="item">
+      <view class="_div data-v-d8027c68 list-number"><label class="_span data-v-d8027c68">订单号：{{item.OrderNo}}</label> <label class="_span data-v-d8027c68">待支付</label></view>
+      <view class="_div data-v-d8027c68 order-info">
+        <view class="_div data-v-d8027c68">
+          <image src="{{'http://www.365dsw.com'+item.PicZip}}" alt class="_img data-v-d8027c68"></image>
+        </view>
+        <view class="_div data-v-d8027c68">
+          <view class="_p data-v-d8027c68">{{item.ProName}}</view>
+          <view class="_p data-v-d8027c68">{{item.Title}}</view>
+          <view class="_p data-v-d8027c68"></view>
+        </view>
+        <view class="_div data-v-d8027c68"><label class="_span data-v-d8027c68">￥{{item.OrderPrice/item.Num}}</label> <label class="_span data-v-d8027c68">数量:{{item.Num}}件</label> <label class="_span data-v-d8027c68">订单总额: <view class="_em data-v-d8027c68">￥{{item.OrderPrice}}</view></label></view>
+      </view>
+      <view class="_div data-v-d8027c68 order-an"><button bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" class="_button data-v-d8027c68">查看详情</button> <button class="_button data-v-d8027c68 act">马上付款</button> <button bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_button data-v-d8027c68">取消订单</button></view>
+    </view>
+  </view>
+</template>

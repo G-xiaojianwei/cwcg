@@ -1,0 +1,6 @@
+<template name="4252de4b">
+  <view class="_div data-v-143678fa product-item" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+    <image src="{{'http://www.365dsw.com'+dataAll.Pic}}" alt class="_img data-v-143678fa"></image>
+    <view class="_p data-v-143678fa">{{dataAll.ProName}}</view> <label class="_span data-v-143678fa">￥<view class="_em data-v-143678fa">{{dataAll.GoodsPrice}}</view></label>
+  </view>
+</template>

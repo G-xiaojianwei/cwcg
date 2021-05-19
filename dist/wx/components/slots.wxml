@@ -1,0 +1,3 @@
+<import src="/components/orderItem.vue.wxml" />
+<import src="/components/product.vue.wxml" />
+<import src="/components/returnTop.vue.wxml" />
