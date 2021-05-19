@@ -1,0 +1,157 @@
+
+.product-item {
+  float: left;
+  margin-left: 15rpx;
+  width: 352rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+  padding-bottom: 10rpx;
+  margin-bottom: 20rpx;
+  box-shadow: 0rpx 0rpx 8rpx 2rpx rgba(0,0,0,.1);
+}
+.product-item ._img {
+  vertical-align: top;
+  width: 352rpx;
+  height: 352rpx;
+}
+.product-item ._p {
+  font-size: 28rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10rpx 10rpx 0;
+}
+.product-item ._div {
+  padding: 10rpx 10rpx 0;
+}
+.product-item ._div ._span {
+  padding: 5rpx 14rpx;
+  background: #ffd0d0;
+  font-size: 22rpx;
+  margin-right: 10rpx;
+}
+.product-item ._div ._span:nth-child(2) {
+  background: #d0d0d0;
+}
+.product-item ._div ._span:nth-child(3) {
+  background: #ebebeb;
+}
+.product-item>._span {
+  padding: 0 10rpx;
+  color: #FE223B;
+  font-size: 22rpx;
+}
+.product-item>._span>._em {
+  display: inline-block;
+  font-size: 32rpx;
+}
+.return {
+  position: fixed;
+  right: 20rpx;
+  bottom: 40rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  background: #FE223B;
+  text-align: center;
+}
+.return ._img {
+  width: 70%;
+  height: 70%;
+  margin-top: 5rpx;
+  vertical-align: middle;
+}
+.list-item {
+  width: 95%;
+  margin: 20rpx auto 0;
+  background: #fff;
+}
+.list-number {
+  display: flex;
+  align-items: center;
+  background: #FE223B;
+  color: #fff;
+  font-size: 28rpx;
+  padding: 20rpx;
+}
+.list-number ._span {
+  flex: 7;
+  display: block;
+  text-align: left;
+}
+.list-number ._span:nth-child(2) {
+  flex: 3;
+  text-align: right;
+}
+.order-info {
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.order-info ._div:nth-child(1) {
+  flex: 3;
+}
+.order-info ._div:nth-child(1) ._img {
+  width: 100%;
+  height: 190rpx;
+}
+.order-info ._div:nth-child(2) {
+  flex: 5;
+  font-size: 24rpx;
+  padding: 0 20rpx;
+  color: #666;
+}
+.order-info ._div:nth-child(2) ._p:nth-child(1) {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #000;
+}
+.order-info ._div:nth-child(3) {
+  position: relative;
+  flex: 2;
+  font-size: 24rpx;
+}
+.order-info ._div:nth-child(3) ._span {
+  display: block;
+  text-align: right;
+}
+.order-info ._div:nth-child(3) ._span:nth-child(1) {
+  font-weight: bold;
+}
+.order-info ._div:nth-child(3) ._span:nth-child(2) {
+  color: #666;
+}
+.order-info ._div:nth-child(3) ._span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 300rpx;
+}
+.order-info ._div:nth-child(3) ._span:nth-child(3) ._em {
+  display: inline-block;
+  color: #FE223B;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.order-an {
+  width: 100%;
+  text-align: right;
+  height: 88rpx;
+  line-height: 88rpx;
+  border-top: 1rpx solid #eee;
+}
+.order-an ._button {
+  display: inline-block;
+  vertical-align: middle;
+  width: 160rpx;
+  height: 64rpx;
+  line-height: 64rpx;
+  background: transparent;
+  border: none;
+  margin-right: 10rpx;
+  font-size: 24rpx;
+}
+.order-an ._button.act {
+  color: #FE223B;
+  border: 1rpx solid #FE223B;
+}
