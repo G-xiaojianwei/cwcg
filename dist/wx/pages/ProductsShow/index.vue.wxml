@@ -1,0 +1,8 @@
+<import src="/components/product.vue.wxml" />
+<import src="/components/returnTop.vue.wxml" /><template name="4dfe86de">
+  <view class="_div data-v-a0a176da">
+    <scroll-view scroll-top="{{site}}" scroll-y="true" refresher-triggered="true" lower-threshold="100" bindscrolltolower="handleProxy" bindscroll="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_scroll-view data-v-a0a176da" style=" {{'height:' + wH + 'px;'}}">
+      <view class="_div data-v-a0a176da new-products-cont" style="padding-top: 20rpx;"><template wx:key="index" data="{{...$root[$kk+'0_'+index], $root}}" is="4252de4b" wx:for="{{dataAll}}" wx:for-index="index" wx:for-item="item"></template></view> <template wx:if="{{d}}" bindupdateInfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="1efbd361"></template>
+    </scroll-view>
+  </view>
+</template>

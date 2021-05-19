@@ -1,0 +1,47 @@
+<template name="6c31be2b">
+  <view class="_div data-v-46e062ba">
+    <view class="_div data-v-46e062ba address">
+      <view class="_h3 data-v-46e062ba">收货地址 <label bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_span data-v-46e062ba">修改地址</label></view>
+      <view class="_div data-v-46e062ba"><label class="_span data-v-46e062ba">{{localAddress.LinkName}}</label><label class="_span data-v-46e062ba">{{localAddress.LinkMobile}}</label></view>
+      <view class="_div data-v-46e062ba"><label class="_span data-v-46e062ba">
+          <view class="_em data-v-46e062ba more" wx:if="{{localAddress.IsDefault==1}}">默认</view>
+        </label><label class="_span data-v-46e062ba">{{localAddress.Province}}{{localAddress.City}}{{localAddress.Area}}{{localAddress.Street}}{{localAddress.Address}}</label></view>
+    </view>
+    <view class="_div data-v-46e062ba order-goods">
+      <view class="_h3 data-v-46e062ba">订单商品</view>
+      <view class="_div data-v-46e062ba order-item" wx:key="index" key="{{index}}" wx:for="{{resInfo}}" wx:for-index="index" wx:for-item="item">
+        <view class="_div data-v-46e062ba">
+          <image src="{{'http://www.365dsw.com'+item.PicUrl}}" alt class="_img data-v-46e062ba"></image>
+        </view>
+        <view class="_div data-v-46e062ba">
+          <view class="_p data-v-46e062ba">{{item.ProName}}</view>
+          <view class="_p data-v-46e062ba">{{item.Title}}</view>
+          <view class="_p data-v-46e062ba">￥{{item.GoodsPrice}}</view>
+          <view class="_p data-v-46e062ba"><input type="text" placeholder="留言填写" class="_input data-v-46e062ba" /></view>
+        </view>
+        <view class="_div data-v-46e062ba"> x{{item.Num}}
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-46e062ba goods-info">
+      <view class="_div data-v-46e062ba">订单数：<label class="_span data-v-46e062ba">{{resInfo.length}}单</label></view>
+      <view class="_div data-v-46e062ba">产品数量：<label class="_span data-v-46e062ba">{{commNum}}件</label></view>
+      <view class="_div data-v-46e062ba">商品金额：<label class="_span data-v-46e062ba">￥{{commSum}}</label></view>
+      <view class="_div data-v-46e062ba">优惠券：<label class="_span data-v-46e062ba">暂无</label></view>
+    </view>
+    <view class="_div data-v-46e062ba goods-pay">
+      <view class="_div data-v-46e062ba">应付：￥{{commSum}}</view>
+      <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-46e062ba">提交订单</view>
+    </view>
+    <view class="_div data-v-46e062ba address-list" wx:if="{{updateAddress}}">
+      <view class="_div data-v-46e062ba model">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{addressArr}}" wx:for-index="index" wx:for-item="item" class="_div data-v-46e062ba {{item.Id == localAddress.Id ? 'model-item act' : 'model-item'}}">
+          <view class="_div data-v-46e062ba"><label class="_span data-v-46e062ba">{{item.LinkName}}</label><label class="_span data-v-46e062ba">{{item.LinkMobile}}</label></view>
+          <view class="_div data-v-46e062ba"><label class="_span data-v-46e062ba">
+              <view class="_em data-v-46e062ba more" wx:if="{{item.IsDefault==1}}">默认</view>
+            </label><label class="_span data-v-46e062ba">{{item.Province}}{{item.City}}{{item.Area}}{{item.Street}}{{item.Address}}</label></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

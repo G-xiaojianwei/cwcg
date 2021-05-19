@@ -1,0 +1,15 @@
+<template name="6f9155b4">
+  <view id="classify" class="_div data-v-19cd3f94">
+    <view class="_div data-v-19cd3f94 classify-left" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" style=" {{'height:' + winH + 'px'}}"><label id="0" class="_span data-v-19cd3f94 {{x == '0' ? 'act' : ''}}">类型</label> <label id="1" class="_span data-v-19cd3f94 {{x == '1' ? 'act' : ''}}">风格</label> <label id="2" class="_span data-v-19cd3f94 {{x == '2' ? 'act' : ''}}">品牌</label></view>
+    <view class="_div data-v-19cd3f94 classify-right" style=" {{'height:' + winH + 'px'}}"><label class="_span data-v-19cd3f94 lx">{{title}}</label>
+      <view class="_div data-v-19cd3f94 classify-cont" style=" {{'height:' + overflowH + 'px'}}">
+        <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" wx:for="{{typeList}}" wx:for-index="index" wx:for-item="item" class="_div data-v-19cd3f94">
+          <image src="/static/img/index_img_23.png" alt class="_img data-v-19cd3f94"></image>
+          <view wx:if="{{x=='0'}}" class="_p data-v-19cd3f94">{{item.Name}}</view>
+          <view wx:if="{{x=='1'}}" class="_p data-v-19cd3f94">{{item.RenovationStyle}}</view>
+          <view wx:if="{{x=='2'}}" class="_p data-v-19cd3f94">{{item.BrandName}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

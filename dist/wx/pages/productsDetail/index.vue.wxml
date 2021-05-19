@@ -1,0 +1,83 @@
+<template name="7e8e4345">
+  <view class="_div data-v-65e7fbf2" style=" {{s}}">
+    <view class="_div data-v-65e7fbf2 swiper">
+      <swiper class="_swiper data-v-65e7fbf2 swiper-detail" circular="true" bindchange="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <swiper-item wx:key="index" key="{{index}}" wx:for="{{infoBanner}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-65e7fbf2">
+          <image src="{{'http://www.365dsw.com'+item}}" alt class="_img data-v-65e7fbf2"></image>
+        </swiper-item>
+      </swiper> <label class="_span data-v-65e7fbf2">{{mainImg}}</label> <label class="_span data-v-65e7fbf2">{{selectedindex+"/"+infoBanner.length}}</label>
+    </view>
+    <view class="_div data-v-65e7fbf2 price-info">
+      <view class="_p data-v-65e7fbf2">优惠价 ￥ {{GoodsPrice}}</view>
+      <view class="_p data-v-65e7fbf2">原价 ￥{{OrigPrice}}</view>
+      <view class="_p data-v-65e7fbf2">系列号：{{ProName}}</view>
+      <view class="_p data-v-65e7fbf2"><label hidden="{{!(tj==0)}}" class="_span data-v-65e7fbf2">限时特价</label> <label hidden="{{!(tj==1)}}" class="_span data-v-65e7fbf2">新品</label>
+        <view class="_em data-v-65e7fbf2">现货:{{Stock}}件</view>
+      </view>
+    </view>
+    <view class="_div data-v-65e7fbf2 cwcg">
+      <view class="_div data-v-65e7fbf2 detail-t">
+        <view class="_div data-v-65e7fbf2">已选规格：</view>
+        <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-65e7fbf2">
+          {{localSpecs}}
+        </view>
+        <view class="_div data-v-65e7fbf2">></view>
+      </view>
+      <view class="_div data-v-65e7fbf2 cwcg-model">
+        <view class="_div data-v-65e7fbf2">
+          <image src="/static/img/cwcg.png" alt class="_img data-v-65e7fbf2"></image>
+        </view>
+        <view class="_div data-v-65e7fbf2">
+          <view class="_h3 data-v-65e7fbf2">诚外诚购</view>
+          <view class="_p data-v-65e7fbf2">诚外诚购主营家居灯饰、工程照明、照明光源、开关插座、户外灯具、厨卫电器等灯具用品。</view>
+        </view>
+      </view>
+      <view class="_div data-v-65e7fbf2 detail-model" wx:if="{{open}}">
+        <view class="_div data-v-65e7fbf2 img">
+          <image src="{{'http://www.365dsw.com'+showImg}}" alt class="_img data-v-65e7fbf2"></image>
+        </view>
+        <view class="_div data-v-65e7fbf2 cs">
+          <view class="_p data-v-65e7fbf2">规格</view> <label data-id="0" data-value="{{index}}" catchtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" wx:for="{{dataArr}}" wx:for-index="index" wx:for-item="item" class="_span data-v-65e7fbf2 {{i == index ? 'act' : ''}}">
+            <image src="{{'http://www.365dsw.com'+item.PicUrl}}" alt class="_img data-v-65e7fbf2"></image> {{item.Title}}
+          </label>
+        </view> <button class="_button data-v-65e7fbf2 detail-btn" bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}">确定</button>
+      </view>
+    </view>
+    <view class="_div data-v-65e7fbf2 detail">
+      <view class="_div data-v-65e7fbf2 detail-nav"><label bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_span data-v-65e7fbf2 {{x == 0 ? 'act' : ''}}">产品介绍</label> <label bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_span data-v-65e7fbf2 {{x == 1 ? 'act' : ''}}">产品参数</label></view>
+      <view class="_div data-v-65e7fbf2 detail-cont" hidden="{{!(x==0)}}">
+        <image src="{{'http://www.365dsw.com'+item}}" alt mode="widthFix" wx:key="index" key="{{index}}" wx:for="{{detailArr}}" wx:for-index="index" wx:for-item="item" class="_img data-v-65e7fbf2"></image>
+      </view>
+      <view class="_div data-v-65e7fbf2 detail-cs" hidden="{{!(x==1)}}">
+        <view class="_div data-v-65e7fbf2 detail-top">
+          <view class="_div data-v-65e7fbf2"><label class="_span data-v-65e7fbf2">系列名</label><label class="_span data-v-65e7fbf2">{{ProName}}</label></view>
+          <view class="_div data-v-65e7fbf2"><label class="_span data-v-65e7fbf2">风格</label><label class="_span data-v-65e7fbf2">{{Style}}</label></view>
+          <view class="_div data-v-65e7fbf2"><label class="_span data-v-65e7fbf2">品牌</label><label class="_span data-v-65e7fbf2">{{brand}}</label></view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-65e7fbf2 cart">
+      <view class="_div data-v-65e7fbf2 cart-left">
+        <view bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_div data-v-65e7fbf2">
+          <image src="/static/img/img_icon_03.png" alt class="_img data-v-65e7fbf2"></image>
+          <view class="_p data-v-65e7fbf2">保存</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_div data-v-65e7fbf2">
+          <image src="{{collectC[c]}}" alt class="_img data-v-65e7fbf2"></image>
+          <view class="_p data-v-65e7fbf2">收藏</view>
+        </view>
+        <view class="_div data-v-65e7fbf2">
+          <image src="/static/img/cart_img_03.png" alt class="_img data-v-65e7fbf2"></image>
+          <view class="_p data-v-65e7fbf2">分享</view> <button class="_button data-v-65e7fbf2 btnzf" open-type="share">转发</button>
+        </view>
+      </view>
+      <view class="_div data-v-65e7fbf2 cart-right">
+        <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_div data-v-65e7fbf2">加入购物车</view>
+        <view bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_div data-v-65e7fbf2">立即购买</view>
+      </view>
+    </view>
+    <view class="_view data-v-65e7fbf2 posterWrap" wx:if="{{openCanvas}}"><canvas canvas-id="posterCanvas" class="_canvas data-v-65e7fbf2 myCanvas"></canvas>
+      <view class="_div data-v-65e7fbf2 fixed_inner"><button bindtap="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_button data-v-65e7fbf2">保存海报</button> <button bindtap="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" class="_button data-v-65e7fbf2">取消</button></view>
+    </view>
+  </view>
+</template>

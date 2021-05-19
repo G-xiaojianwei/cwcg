@@ -1,0 +1,39 @@
+<template name="bf60f760">
+  <view class="_div data-v-6a535d5c">
+    <view class="_div data-v-6a535d5c empty-cart" style="display: none;">
+      <image src="/static/img/gwcl_03.png" alt class="_img data-v-6a535d5c"></image>
+      <view class="_p data-v-6a535d5c empty-h">亲，购物车竟然是空的</view>
+      <view class="_p data-v-6a535d5c empty-e">赶紧去挑几件喜欢的灯</view> <button class="_button data-v-6a535d5c">去逛逛</button>
+    </view>
+    <view class="_div data-v-6a535d5c cart-added" bindchange="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}">
+      <checkbox-group bindchange="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_checkbox-group data-v-6a535d5c">
+        <view class="_div data-v-6a535d5c cart-item" wx:for="{{cartArr}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-6a535d5c"><label class="_label data-v-6a535d5c radio">
+              <checkbox value="{{item.Id}}" color="#FE223B" checked="{{item.select}}" class="_checkbox data-v-6a535d5c" />
+            </label></view>
+          <view class="_div data-v-6a535d5c">
+            <image src="{{'http://www.365dsw.com'+item.PicUrl}}" alt class="_img data-v-6a535d5c"></image>
+          </view>
+          <view class="_div data-v-6a535d5c">
+            <view class="_p data-v-6a535d5c">{{item.ProName}}</view>
+            <view class="_p data-v-6a535d5c">{{item.Title}}</view>
+            <view class="_p data-v-6a535d5c"></view>
+            <view class="_p data-v-6a535d5c"></view>
+            <view class="_p data-v-6a535d5c">￥{{item.GoodsPrice}}</view>
+          </view>
+          <view class="_div data-v-6a535d5c">
+            <view class="_i data-v-6a535d5c icon_jj" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></view>
+            <view class="_div data-v-6a535d5c num-aq"><label bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_span data-v-6a535d5c">-</label> <label class="_span data-v-6a535d5c"><input value="{{item.Num}}" bindinput="handleProxy" bindblur="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" class="_input data-v-6a535d5c" /></label> <label bindtap="handleProxy" data-eventid="{{'3_'+index}}" data-comkey="{{$k}}" class="_span data-v-6a535d5c">+</label></view>
+          </view>
+        </view>
+      </checkbox-group>
+    </view>
+    <view class="_div data-v-6a535d5c cart-summary">
+      <view class="_div data-v-6a535d5c"><label class="_label data-v-6a535d5c radio">
+          <checkbox value="r1" color="#FE223B" checked="{{allSelect}}" bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_checkbox data-v-6a535d5c" />全选
+        </label></view>
+      <view class="_div data-v-6a535d5c">合计：<label class="_span data-v-6a535d5c">￥{{addSum}}</label></view>
+      <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_div data-v-6a535d5c">结算（{{cartId.length}}件）</view>
+    </view>
+  </view>
+</template>

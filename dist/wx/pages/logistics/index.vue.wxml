@@ -1,0 +1,28 @@
+<template name="716f9502">
+  <view class="_div data-v-1fe7f692">
+    <view class="_div data-v-1fe7f692 header">
+      <view class="_p data-v-1fe7f692">物流订单：574545475547</view>
+      <view class="_p data-v-1fe7f692">物流公司：顺丰快递</view>
+    </view>
+    <view class="_div data-v-1fe7f692 cont">
+      <view class="_div data-v-1fe7f692 cont-title">订单进度</view>
+      <view class="_div data-v-1fe7f692 list">
+        <view class="_div data-v-1fe7f692">
+          <view class="_p data-v-1fe7f692">金华市|【义乌转运中心】，正发往【重庆转运中心】</view> <label class="_span data-v-1fe7f692">2021/3/22 19:38:59</label>
+        </view>
+        <view class="_div data-v-1fe7f692">
+          <view class="_p data-v-1fe7f692">金华市|【义乌转运中心】，正发往【重庆转运中心】</view> <label class="_span data-v-1fe7f692">2021/3/22 19:38:59</label>
+        </view>
+        <view class="_div data-v-1fe7f692">
+          <view class="_p data-v-1fe7f692">金华市|【义乌转运中心】，正发往【重庆转运中心】</view> <label class="_span data-v-1fe7f692">2021/3/22 19:38:59</label>
+        </view>
+        <view class="_div data-v-1fe7f692">
+          <view class="_p data-v-1fe7f692">金华市|【义乌转运中心】，正发往【重庆转运中心】</view> <label class="_span data-v-1fe7f692">2021/3/22 19:38:59</label>
+        </view>
+        <view class="_div data-v-1fe7f692">
+          <view class="_p data-v-1fe7f692">金华市|【义乌转运中心】，正发往【重庆转运中心】</view> <label class="_span data-v-1fe7f692">2021/3/22 19:38:59</label>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

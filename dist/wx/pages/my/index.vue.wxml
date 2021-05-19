@@ -1,0 +1,64 @@
+<template name="414dd85c">
+  <view class="_div data-v-191802c4">
+    <view class="_div data-v-191802c4 header">
+      <view class="_div data-v-191802c4 header-top">
+        <view class="_div data-v-191802c4">
+          <image src="{{userInfo.nickName == undefined && dataInfo.Id == undefined ? '/static/img/logo.jpg' :userInfo.avatarUrl}}" alt class="_img data-v-191802c4"></image>
+        </view>
+        <view class="_div data-v-191802c4"><button class="_button data-v-191802c4 btn" open-type="getUserInfo" bindgetuserinfo="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">{{userInfo.nickName == undefined && dataInfo.Id == undefined ? '点击登录' :userInfo.nickName}}</button>
+          <view class="_p data-v-191802c4">ID:{{userInfo.nickName == undefined && dataInfo.Id == undefined ? '' :dataInfo.NickName}}（消费者）</view>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-191802c4 mylist">
+      <view class="_div data-v-191802c4 mylist-top">
+        <view class="_div data-v-191802c4 mylist-title">
+          <view class="_p data-v-191802c4">我的订单</view>
+          <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_p data-v-191802c4">查看所有订单</view>
+        </view>
+        <view class="_div data-v-191802c4 mylist-cont">
+          <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+            <image src="/static/img/dfk.png" alt class="_img data-v-191802c4"></image>
+            <view class="_p data-v-191802c4">待付款</view> <label class="_span data-v-191802c4 icon-point" wx:if="{{Payment!==0}}">{{Payment}}</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+            <image src="/static/img/dfh.png" alt class="_img data-v-191802c4"></image>
+            <view class="_p data-v-191802c4">待发货</view> <label class="_span data-v-191802c4 icon-point" wx:if="{{delivery!==0}}">{{delivery}}</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+            <image src="/static/img/dsh.png" alt class="_img data-v-191802c4"></image>
+            <view class="_p data-v-191802c4">待收货</view> <label class="_span data-v-191802c4 icon-point" wx:if="{{delivery!==0}}">{{delivery}}</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+            <image src="/static/img/ywc.png" alt class="_img data-v-191802c4"></image>
+            <view class="_p data-v-191802c4">已完成</view> <label class="_span data-v-191802c4 icon-point" wx:if="{{delivery!==0}}">{{delivery}}</label>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+            <image src="/static/img/shtk.png" alt class="_img data-v-191802c4"></image>
+            <view class="_p data-v-191802c4">售后/退款</view> <label class="_span data-v-191802c4 icon-point" wx:if="{{delivery!==0}}">{{delivery}}</label>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-191802c4 mylist-bottom">
+        <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+          <image src="/static/img/sc.png" alt class="_img data-v-191802c4"></image>
+          <view class="_p data-v-191802c4">我的收藏</view>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_div data-v-191802c4">
+          <image src="/static/img/dz.png" alt class="_img data-v-191802c4"></image>
+          <view class="_p data-v-191802c4">收货地址</view>
+        </view>
+        <view class="_div data-v-191802c4">
+          <image src="/static/img/contact.png" alt class="_img data-v-191802c4"></image>
+          <view class="_p data-v-191802c4">联系客服</view> <button class="_button data-v-191802c4 contact" open-type="contact" bindcontact="handleContact"></button>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-191802c4 getPhone" wx:if="{{showModel}}">
+      <view class="_div data-v-191802c4 getPhone-model">
+        <view class="_div data-v-191802c4">授权获取手机号</view>
+        <view class="_div data-v-191802c4"><button bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_button data-v-191802c4">取消</button><button open-type="getPhoneNumber" bindgetphonenumber="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" class="_button data-v-191802c4">同意授权</button></view>
+      </view>
+    </view>
+  </view>
+</template>

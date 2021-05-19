@@ -1,0 +1,63 @@
+<import src="/components/product.vue.wxml" />
+<import src="/components/returnTop.vue.wxml" /><template name="37d3e07e">
+  <view class="_div data-v-cd1d8594">
+    <scroll-view scroll-top="{{site}}" scroll-y="true" refresher-triggered="true" lower-threshold="100" bindscrolltolower="handleProxy" bindscroll="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}" class="_scroll-view data-v-cd1d8594" style=" {{'height:' + wH + 'px;'}}">
+      <view class="_div data-v-cd1d8594 index-logo">
+        <image src="/static/img/logo.png" alt class="_img data-v-cd1d8594"></image>
+      </view>
+      <view class="_div data-v-cd1d8594 index-search">
+        <view class="_div data-v-cd1d8594 index-search-item">
+          <view class="_div data-v-cd1d8594"><input class="_input data-v-cd1d8594 weui-input" value="{{keywords}}" bindinput="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" />
+            <view class="_i data-v-cd1d8594 icon_search"></view>
+          </view>
+          <view bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_div data-v-cd1d8594">搜索</view>
+        </view>
+      </view>
+      <swiper class="_swiper data-v-cd1d8594 index-swiper" autoplay="true" indicator-dots="true" indicator-color="rgba(255,255,255,.5)" indicator-active-color="#fff">
+        <swiper-item wx:key="index" key="{{index}}" wx:for="{{bannerImg}}" wx:for-index="index" wx:for-item="item" class="_swiper-item data-v-cd1d8594">
+          <image src="{{'https://www.365dsw.com/'+item.PicUrl}}" alt class="_img data-v-cd1d8594"></image>
+        </swiper-item>
+      </swiper>
+      <view class="_div data-v-cd1d8594 index-nav">
+        <view bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_div data-v-cd1d8594">
+          <image src="/static/img/index_img_07.png" alt class="_img data-v-cd1d8594"></image> <label class="_span data-v-cd1d8594">最新商品</label>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_div data-v-cd1d8594">
+          <image src="/static/img/index_img_09.png" alt class="_img data-v-cd1d8594"></image> <label class="_span data-v-cd1d8594">特价专区</label>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_div data-v-cd1d8594">
+          <image src="/static/img/index_img_11.png" alt class="_img data-v-cd1d8594"></image> <label class="_span data-v-cd1d8594">所用商品</label>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_div data-v-cd1d8594">
+          <image src="/static/img/index_img_14.png" alt class="_img data-v-cd1d8594"></image> <label class="_span data-v-cd1d8594">关于我们</label>
+        </view>
+      </view>
+      <view class="_div data-v-cd1d8594 special">
+        <view class="_div data-v-cd1d8594 special-title">特价推荐</view>
+        <view class="_div data-v-cd1d8594 special-cont">
+          <view class="_div data-v-cd1d8594 special-item" wx:if="{{index <=3}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{specialArr}}" wx:for-index="index" wx:for-item="item">
+            <image src="{{'http://www.365dsw.com/'+item.Pic}}" alt class="_img data-v-cd1d8594"></image>
+            <view class="_p data-v-cd1d8594">{{item.ProName}}</view> <label class="_span data-v-cd1d8594">限时特价</label>
+            <view class="_div data-v-cd1d8594 special-price"><label class="_span data-v-cd1d8594">￥{{item.OrigPrice}}</label> <label class="_span data-v-cd1d8594 active">￥{{item.GoodsPrice}}</label></view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-cd1d8594 advert">
+        <image src="/static/img/index_img_20.png" alt class="_img data-v-cd1d8594"></image>
+      </view>
+      <view class="_div data-v-cd1d8594 all-product">
+        <view class="_div data-v-cd1d8594 product-nav">
+          <view bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_ul data-v-cd1d8594">
+            <view id="0" class="_li data-v-cd1d8594 {{c == '0' ? 'act' : ''}}">家具灯饰</view>
+            <view id="1" class="_li data-v-cd1d8594 {{c == '1' ? 'act' : ''}}">工程商照</view>
+            <view id="2" class="_li data-v-cd1d8594 {{c == '2' ? 'act' : ''}}">照明光源</view>
+            <view id="3" class="_li data-v-cd1d8594 {{c == '3' ? 'act' : ''}}">开关插座</view>
+            <view id="4" class="_li data-v-cd1d8594 {{c == '4' ? 'act' : ''}}">户外灯具</view>
+            <view id="5" class="_li data-v-cd1d8594 {{c == '5' ? 'act' : ''}}">厨卫电渠</view>
+          </view>
+        </view>
+        <view class="_div data-v-cd1d8594 product-cont"><template wx:key="index" data="{{...$root[$kk+'1_'+index], $root}}" is="4252de4b" wx:for="{{goodsShow}}" wx:for-index="index" wx:for-item="item"></template></view>
+      </view> <template wx:if="{{d}}" bindupdateInfo="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'2'], $root}}" is="1efbd361"></template>
+    </scroll-view>
+  </view>
+</template>

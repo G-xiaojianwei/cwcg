@@ -1,0 +1,64 @@
+@import "../../common/vendor.wxss";
+
+._img {
+  width: 100%;
+  height: 300rpx;
+}
+.header {
+  background: #fff;
+  border-bottom: 20rpx solid #F1F2F6;
+  padding: 20rpx 40rpx;
+  font-size: 28rpx;
+}
+.header ._p:nth-child(1) {
+  margin-bottom: 10rpx;
+  font-weight: bold;
+}
+.cont {
+  padding: 20rpx 40rpx;
+}
+.cont .cont-title {
+  border-left: 1rpx solid #F43530;
+  padding-left: 20rpx;
+  line-height: 30rpx;
+  font-size: 30rpx;
+}
+.cont .list {
+  font-size: 26rpx;
+  padding: 60rpx 40rpx;
+}
+.cont .list ._div {
+  position: relative;
+  padding-left: 40rpx;
+  padding-bottom: 20rpx;
+  border-left: 1rpx solid #F43530;
+}
+.cont .list ._div::after {
+  content: "";
+  display: block;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #F43530;
+  border-radius: 50%;
+  position: absolute;
+  left: -10rpx;
+  top: 0;
+}
+.cont .list ._div:nth-child(1) ::before {
+  content: "";
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  background-color: rgba(244,53,48,.1);
+  border-radius: 50%;
+  position: absolute;
+  left: -20rpx;
+  top: -10rpx;
+}
+.cont .list ._div ._span {
+  display: block;
+  color: #666;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1rpx solid #F1F2F6;
+}

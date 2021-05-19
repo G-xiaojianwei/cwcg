@@ -1,0 +1,87 @@
+<template name="6478ff90">
+  <view class="_div data-v-2f60dcf0">
+    <view class="_div data-v-2f60dcf0 info">
+      <view class="_div data-v-2f60dcf0">
+        <image src="/dist/wx/static/img/kdd_03.png" alt class="_img data-v-2f60dcf0"></image>
+      </view>
+      <view class="_div data-v-2f60dcf0">
+        <view class="_p data-v-2f60dcf0">肖氏照明 客厅/卧室/书房/餐厅 翰能 现代水晶灯</view>
+        <view class="_p data-v-2f60dcf0">水晶灯 6头</view>
+        <view class="_p data-v-2f60dcf0"><label class="_span data-v-2f60dcf0">¥：0.01</label><label class="_span data-v-2f60dcf0">x1</label></view>
+      </view>
+    </view>
+    <view class="_div data-v-2f60dcf0 type">
+      <view class="_div data-v-2f60dcf0"><label class="_span data-v-2f60dcf0">申请类型</label>
+        <view class="_i data-v-2f60dcf0 icon-sl"></view>
+      </view>
+      <view class="_div data-v-2f60dcf0 type-model">
+        <view class="_div data-v-2f60dcf0 model-cont">
+          <view class="_div data-v-2f60dcf0 model-title">申请参数</view>
+          <view class="_div data-v-2f60dcf0 model-tag"><label class="_span data-v-2f60dcf0 act">维修</label> <label class="_span data-v-2f60dcf0">退换</label></view>
+          <view class="_div data-v-2f60dcf0 modle-info">
+            <view class="_div data-v-2f60dcf0 info-item">
+              <view class="_div data-v-2f60dcf0">提交数量：</view>
+              <view class="_div data-v-2f60dcf0">
+                <view class="_em data-v-2f60dcf0">-</view><input type="text" class="_input data-v-2f60dcf0" />
+                <view class="_em data-v-2f60dcf0">+</view><label class="_span data-v-2f60dcf0">(您最多可以输入数量为1)</label>
+              </view>
+            </view>
+            <view class="_div data-v-2f60dcf0 info-item reason-i">
+              <view class="_div data-v-2f60dcf0">提交原因：</view>
+              <view class="_div data-v-2f60dcf0">
+                <picker bindchange="handleProxy" value="{{index}}" range="{{array}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_picker data-v-2f60dcf0">
+                  <view class="_view data-v-2f60dcf0 picker">
+                    {{array[index]}}
+                  </view>
+                </picker>
+                <view class="_i data-v-2f60dcf0 icon-xljt"></view>
+              </view>
+            </view>
+            <view class="_div data-v-2f60dcf0 info-item phone">
+              <view class="_div data-v-2f60dcf0">交易单号：</view>
+              <view class="_div data-v-2f60dcf0"><input type="text" class="_input data-v-2f60dcf0" /></view>
+            </view>
+            <view class="_div data-v-2f60dcf0 info-item phone">
+              <view class="_div data-v-2f60dcf0">联系电话：</view>
+              <view class="_div data-v-2f60dcf0"><input type="text" class="_input data-v-2f60dcf0" /></view>
+            </view>
+            <view class="_div data-v-2f60dcf0 info-item phone">
+              <view class="_div data-v-2f60dcf0">物流单号：</view>
+              <view class="_div data-v-2f60dcf0"><input type="text" class="_input data-v-2f60dcf0" /></view>
+            </view>
+            <view class="_div data-v-2f60dcf0 info-item reason-i">
+              <view class="_div data-v-2f60dcf0">选择物流：</view>
+              <view class="_div data-v-2f60dcf0">
+                <picker bindchange="handleProxy" value="{{index1}}" range="{{array1}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_picker data-v-2f60dcf0">
+                  <view class="_view data-v-2f60dcf0 picker">
+                    {{array1[index1]}}
+                  </view>
+                </picker>
+                <view class="_i data-v-2f60dcf0 icon-xljt"></view>
+              </view>
+            </view>
+          </view> <button class="_button data-v-2f60dcf0 btn2">完成</button>
+        </view>
+      </view>
+    </view>
+    <view class="_div data-v-2f60dcf0 reason">
+      <view class="_div data-v-2f60dcf0 title"> 申请原因<label class="_span data-v-2f60dcf0">(请您描述问题并上传收到商品照片)</label></view>
+      <view class="_div data-v-2f60dcf0 cont"><textarea placeholder="请输入问题描述" class="_textarea data-v-2f60dcf0" />
+        <view class="_div data-v-2f60dcf0">
+          <view class="_div data-v-2f60dcf0 file-img">
+            <image src="/static/img/add.png" alt class="_img data-v-2f60dcf0"></image>
+          </view>
+          <view class="_div data-v-2f60dcf0 file-img">
+            <image src="/static/img/add.png" alt class="_img data-v-2f60dcf0"></image>
+          </view>
+          <view class="_div data-v-2f60dcf0 file-img">
+            <image src="/static/img/add.png" alt class="_img data-v-2f60dcf0"></image>
+          </view>
+          <view class="_div data-v-2f60dcf0 file-img">
+            <image src="/static/img/add.png" alt class="_img data-v-2f60dcf0"></image>
+          </view>
+        </view>
+      </view> <button class="_button data-v-2f60dcf0 btn">提交申请</button>
+    </view>
+  </view>
+</template>

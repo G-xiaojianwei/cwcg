@@ -1,0 +1,198 @@
+@import "../../common/vendor.wxss";
+
+.btn1.data-v-191802c4 {
+  position: relative;
+}
+.btn2.data-v-191802c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.header.data-v-191802c4 {
+  width: 100%;
+  height: 254rpx;
+  background-color: #FE223B;
+}
+.header-top.data-v-191802c4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 80rpx;
+  color: #fff;
+}
+.header-top ._div.data-v-191802c4:nth-child(1) {
+  flex: 2.5;
+}
+.header-top ._div:nth-child(1) ._img.data-v-191802c4 {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 6rpx solid rgba(255,255,255,.5);
+}
+.header-top ._div.data-v-191802c4:nth-child(2) {
+  flex: 7.5;
+}
+.header-top ._div:nth-child(2) ._p.data-v-191802c4:nth-child(2) {
+  margin-top: 10rpx;
+  font-size: 24rpx;
+}
+.mylist.data-v-191802c4 {
+  position: relative;
+  padding-top: 200rpx;
+}
+.mylist-top.data-v-191802c4 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -120rpx;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 5rpx rgba(0,0,0,.05);
+  width: 95%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.mylist-top .mylist-title.data-v-191802c4 {
+  padding: 20rpx 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx  solid #eee;
+}
+.mylist-top .mylist-title ._p.data-v-191802c4 {
+  flex: 7;
+  font-weight: bold;
+}
+.mylist-top .mylist-title ._p.data-v-191802c4:nth-child(2) {
+  flex: 3;
+  font-size: 24rpx;
+  color: #666;
+  text-align: right;
+}
+.mylist-cont.data-v-191802c4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40rpx 0;
+}
+.mylist-cont ._div.data-v-191802c4 {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+}
+.mylist-cont ._div ._img.data-v-191802c4 {
+  width: 56rpx;
+  height: 56rpx;
+}
+.mylist-cont ._div ._span.data-v-191802c4 {
+  position: absolute;
+  top: -10rpx;
+  right: 10rpx;
+  display: inline-block;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  min-height: 20rpx;
+  min-width: 20rpx;
+  background: red;
+  line-height: 20rpx;
+  font-size: 24rpx;
+  color: #FFFFFF;
+  text-align: center;
+}
+.mylist-bottom.data-v-191802c4 {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 95%;
+  padding: 40rpx 20rpx;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 10rpx 5rpx rgba(0,0,0,.05);
+}
+.mylist-bottom ._div.data-v-191802c4 {
+  position: relative;
+  width: 150rpx;
+  text-align: center;
+  font-size: 24rpx;
+}
+.mylist-bottom ._div ._img.data-v-191802c4 {
+  margin-bottom: 10rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+.btn.data-v-191802c4 {
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  padding: 0;
+  background: transparent;
+  font-size: 32rpx;
+  text-align: left;
+  color: #fff;
+  border-radius: 0;
+}
+.contact.data-v-191802c4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100rpx;
+  height: 100rpx;
+  background: transparent;
+}
+._button.data-v-191802c4::after {
+  display: none;
+}
+.getPhone.data-v-191802c4 {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.7);
+  z-index: 999;
+}
+.getPhone-model.data-v-191802c4 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  width: 70%;
+  height: 20%;
+  background: #fff;
+  padding: 40rpx;
+  border-radius: 10rpx;
+}
+.getPhone-model ._div.data-v-191802c4:nth-child(1) {
+  text-align: center;
+  padding-bottom: 40rpx;
+  border-bottom: 1rpx solid #eee;
+  font-size: 34rpx;
+}
+.getPhone-model ._div.data-v-191802c4:nth-child(2) {
+  padding-top: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.getPhone-model ._div:nth-child(2) ._button.data-v-191802c4 {
+  padding: 0rpx 60rpx;
+  box-sizing: border-box;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 30rpx;
+}
+.getPhone-model ._div:nth-child(2) ._button.data-v-191802c4:last-child {
+  background: limegreen;
+  color: #fff;
+}

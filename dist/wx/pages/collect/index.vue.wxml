@@ -1,0 +1,16 @@
+<template name="0ec6db56">
+  <view class="_div data-v-305dcd64">
+    <view class="_div data-v-305dcd64 list">
+      <view class="_div data-v-305dcd64 list-item" wx:key="index" key="{{index}}" wx:for="{{collectArr}}" wx:for-index="index" wx:for-item="item">
+        <view bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}" class="_div data-v-305dcd64">
+          <image src="{{'http://www.365dsw.com'+item.Pic}}" alt class="_img data-v-305dcd64"></image>
+        </view>
+        <view bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_div data-v-305dcd64">
+          <view class="_p data-v-305dcd64">{{item.ProName}}</view>
+        </view>
+        <view class="_div data-v-305dcd64"><button bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" class="_button data-v-305dcd64">删除</button></view>
+      </view>
+    </view>
+    <view class="_p data-v-305dcd64 data">没有更多数据</view>
+  </view>
+</template>

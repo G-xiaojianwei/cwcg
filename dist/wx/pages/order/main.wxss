@@ -1,0 +1,48 @@
+@import "../../common/vendor.wxss";
+
+page {
+  background: #f1f1f1;
+}
+.order-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+.order-nav ._span {
+  flex: 1;
+  text-align: center;
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #666;
+  padding: 20rpx 0;
+}
+.order-nav ._span.act {
+  color: #FE223B;
+  border-bottom: 4rpx solid #FE223B;
+}
+.order-empty {
+  text-align: center;
+}
+.order-empty ._img {
+  margin-top: 120rpx;
+  width: 90rpx;
+  height: 90rpx;
+  vertical-align: middle;
+}
+.order-empty ._p {
+  font-size: 24rpx;
+  padding: 30rpx;
+}
+.order-empty ._button {
+  background: transparent;
+  border: 8rpx solid #4c4c4c;
+  background: #fff;
+  color: #4C4C4C;
+  width: 200rpx;
+  height: 80rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  margin: 0 auto;
+  border-radius: 20rpx;
+}

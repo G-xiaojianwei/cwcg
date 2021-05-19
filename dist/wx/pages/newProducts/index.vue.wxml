@@ -1,0 +1,30 @@
+<import src="/components/product.vue.wxml" />
+<import src="/components/returnTop.vue.wxml" /><template name="6f7a49d0">
+  <view class="_div data-v-404f4b70">
+    <scroll-view scroll-top="{{site}}" scroll-y="true" refresher-triggered="true" lower-threshold="100" bindscrolltolower="handleProxy" bindscroll="handleProxy" data-eventid="{{'11'}}" data-comkey="{{$k}}" class="_scroll-view data-v-404f4b70" style=" {{'height:' + wH + 'px;'}}">
+      <view class="_div data-v-404f4b70 new-products-nav" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}"><label id="0" class="_span data-v-404f4b70 {{i == '0' ? 'act' : ''}}">新品</label> <label id="1" class="_span data-v-404f4b70 {{i == '1' ? 'act' : ''}}">特价</label> <label id="2" class="_span data-v-404f4b70 {{i == '2' ? 'act' : ''}}">价格</label> <label id="3" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_span data-v-404f4b70 {{i == '3' ? 'act' : ''}}">筛选</label></view>
+      <view class="_div data-v-404f4b70 new-products-cont"><template wx:key="index" data="{{...$root[$kk+'0_'+index], $root}}" is="4252de4b" wx:for="{{dataAll}}" wx:for-index="index" wx:for-item="item"></template></view>
+      <view id="model" class="_div data-v-404f4b70 price-model" hidden="{{!(priceK)}}" bindtap="handleProxy" data-eventid="{{'9'}}" data-comkey="{{$k}}">
+        <view class="_div data-v-404f4b70 price-model-cont">
+          <view class="_div data-v-404f4b70"><label class="_span data-v-404f4b70">关键词</label>
+            <view class="_div data-v-404f4b70"><input type="text" placeholder="请输入关键词" value="{{keywords}}" bindinput="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_input data-v-404f4b70" /></view>
+          </view>
+          <view class="_div data-v-404f4b70"><label class="_span data-v-404f4b70">价格</label>
+            <view class="_div data-v-404f4b70"> 价格区间（元）<input type="digit" placeholder="最低价" value="{{lowPrice}}" bindinput="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_input data-v-404f4b70" /> - <input type="digit" placeholder="最高价" value="{{highPrice}}" bindinput="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-404f4b70" /></view>
+          </view>
+          <view class="_div data-v-404f4b70"><label class="_span data-v-404f4b70">品牌</label>
+            <view class="_div data-v-404f4b70 classiy">
+              <scroll-view scroll-y="true" style="height: 300rpx;" class="_scroll-view data-v-404f4b70"><label id="{{item.Id}}" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'5_'+index}}" data-comkey="{{$k}}" wx:for="{{brand}}" wx:for-index="index" wx:for-item="item" class="_span data-v-404f4b70 {{brandid == item.Id ? 'act' : ''}}">{{item.BrandName}}</label></scroll-view>
+            </view>
+          </view>
+          <view class="_div data-v-404f4b70"><label class="_span data-v-404f4b70">类别</label>
+            <view class="_div data-v-404f4b70 classiy">
+              <scroll-view scroll-y="true" style="height: 300rpx;" class="_scroll-view data-v-404f4b70"><label id="{{item.Id}}" data-level="{{item.LevelIndex}}" bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'6_'+index}}" data-comkey="{{$k}}" wx:for="{{typeList}}" wx:for-index="index" wx:for-item="item" class="_span data-v-404f4b70 {{idact == item.Id ? 'act' : ''}}">{{item.Name}}</label></scroll-view>
+            </view>
+          </view>
+          <view class="_div data-v-404f4b70 btn"><label bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_span data-v-404f4b70">重置</label><label bindtap="handleProxy" data-eventid="{{'8'}}" data-comkey="{{$k}}" class="_span data-v-404f4b70">完成</label></view>
+        </view>
+      </view> <template wx:if="{{d}}" bindupdateInfo="handleProxy" data-eventid="{{'10'}}" data-comkey="{{$k}}" data="{{...$root[$kk+'1'], $root}}" is="1efbd361"></template>
+    </scroll-view>
+  </view>
+</template>

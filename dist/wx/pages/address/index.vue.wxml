@@ -1,0 +1,60 @@
+<template name="1ebba1a0">
+  <view class="_div data-v-107440d0">
+    <view class="_div data-v-107440d0">
+      <view class="_p data-v-107440d0 no-address" wx:if="{{add == 0}}">暂无收货地址</view>
+      <view class="_div data-v-107440d0 address-list" wx:if="{{add == 1}}">
+        <view class="_div data-v-107440d0 address-item" wx:key="index" key="{{index}}" wx:for="{{addressArr}}" wx:for-index="index" wx:for-item="item">
+          <view class="_div data-v-107440d0">
+            <view class="_p data-v-107440d0"><label class="_span data-v-107440d0">{{item.LinkName}}</label><label class="_span data-v-107440d0">{{item.LinkMobile}}</label></view>
+            <view class="_p data-v-107440d0">{{item.Province}}{{item.City}}{{item.Area}}{{item.Street}}{{item.Address}}</view>
+            <view class="_i data-v-107440d0 icon_jj" bindtap="handleProxy" data-eventid="{{'0_'+index}}" data-comkey="{{$k}}"></view>
+          </view>
+          <view class="_div data-v-107440d0"><label class="_span data-v-107440d0"><label class="_label data-v-107440d0 radio">
+                <radio value="r1" color="#FE223B" checked="{{item.IsDefault==1}}" bindtap="handleProxy" data-eventid="{{'1_'+index}}" data-comkey="{{$k}}" class="_radio data-v-107440d0" />默认地址
+              </label></label> <label bindtap="handleProxy" data-eventid="{{'2_'+index}}" data-comkey="{{$k}}" class="_span data-v-107440d0">编辑</label></view>
+        </view>
+      </view>
+      <view class="_div data-v-107440d0 add" wx:if="{{add != 2}}"><button bindtap="handleProxy" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_button data-v-107440d0">新增收货地址</button></view>
+    </view>
+    <view class="_div data-v-107440d0 add-address" wx:if="{{add == 2}}">
+      <view class="_div data-v-107440d0"><label class="_span data-v-107440d0">收货人</label> <label class="_span data-v-107440d0"><input type="text" placeholder="请输入名字" value="{{addName}}" bindinput="handleProxy" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_input data-v-107440d0" /></label></view>
+      <view class="_div data-v-107440d0"><label class="_span data-v-107440d0">联系电话</label> <label class="_span data-v-107440d0"><input type="text" placeholder="请输入电话" value="{{addPhone}}" bindinput="handleProxy" data-eventid="{{'5'}}" data-comkey="{{$k}}" class="_input data-v-107440d0" /></label></view>
+      <view class="_div data-v-107440d0"><label class="_span data-v-107440d0">所在地区</label> <label bindtap="handleProxy" data-eventid="{{'6'}}" data-comkey="{{$k}}" class="_span data-v-107440d0">
+          {{province}} > {{city}} > {{area}} > {{street}}
+        </label></view>
+      <view class="_div data-v-107440d0 address-model" wx:if="{{showModel}}">
+        <view class="_div data-v-107440d0 model-top">
+          <view class="_div data-v-107440d0 left">{{province}} > {{city}} > {{area}} > {{street}}</view>
+          <view class="_div data-v-107440d0 right"><button bindtap="handleProxy" data-eventid="{{'7'}}" data-comkey="{{$k}}" class="_button data-v-107440d0">确定</button></view>
+        </view>
+        <view class="_div data-v-107440d0 model-cont">
+          <view class="_div data-v-107440d0">
+            <view class="_ul data-v-107440d0">
+              <view bindtap="handleProxy" wx:key="index" key="{{index}}" data-eventid="{{'8_'+index}}" data-comkey="{{$k}}" wx:for="{{cityArr}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107440d0 {{item.AreaId == provinceid ? 'act' : ''}}">{{item.AreaName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-107440d0">
+            <view class="_ul data-v-107440d0">
+              <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'9_'+index}}" data-comkey="{{$k}}" wx:for="{{cityS}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107440d0 {{item.AreaId == cityid ? 'act' : ''}}">{{item.AreaName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-107440d0">
+            <view class="_ul data-v-107440d0">
+              <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'10_'+index}}" data-comkey="{{$k}}" wx:for="{{areaS}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107440d0 {{item.AreaId == areaid ? 'act' : ''}}">{{item.AreaName}}</view>
+            </view>
+          </view>
+          <view class="_div data-v-107440d0">
+            <view class="_ul data-v-107440d0">
+              <view wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'11_'+index}}" data-comkey="{{$k}}" wx:for="{{streetS}}" wx:for-index="index" wx:for-item="item" class="_li data-v-107440d0 {{item.AreaId == streetid ? 'act' : ''}}">{{item.AreaName}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="_div data-v-107440d0"><label class="_span data-v-107440d0">详细地址</label> <label class="_span data-v-107440d0"><input type="text" placeholder="请输入地址" value="{{addLcal}}" bindinput="handleProxy" data-eventid="{{'12'}}" data-comkey="{{$k}}" class="_input data-v-107440d0" /></label></view>
+      <view class="_div data-v-107440d0"><label class="_span data-v-107440d0">设为默认地址</label> <label class="_span data-v-107440d0">
+          <switch checked="{{addDefault}}" bindchange="handleProxy" color="#FE223B" data-eventid="{{'13'}}" data-comkey="{{$k}}" class="_switch data-v-107440d0" />
+        </label></view>
+      <view class="_div data-v-107440d0 btn"><button bindtap="handleProxy" data-eventid="{{'14'}}" data-comkey="{{$k}}" class="_button data-v-107440d0">取消</button><button bindtap="handleProxy" data-eventid="{{'15'}}" data-comkey="{{$k}}" class="_button data-v-107440d0">提交</button></view>
+    </view>
+  </view>
+</template>

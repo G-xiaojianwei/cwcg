@@ -1,0 +1,12 @@
+@import "../../common/vendor.wxss";
+
+._img {
+  width: 100%;
+  height: 300rpx;
+}
+._p {
+  padding: 20rpx 40rpx;
+  box-sizing: border-box;
+  text-indent: 2em;
+  line-height: 50rpx;
+}
